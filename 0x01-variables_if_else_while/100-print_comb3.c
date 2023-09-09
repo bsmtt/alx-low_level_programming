@@ -13,9 +13,9 @@ int main(void)
 	n = 0;
 	i = 0;
 
-	while (n <= 9)
+	for (n = 0; n <= 9; n++)
 	{
-		while (i <= 9)
+		for (i = 0; i <= 9; i++)
 		{
 			putchar(n + '0');
 			putchar(i + '0');
@@ -24,9 +24,7 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 			}
-			i++;
 		}
-		n++;
 	}
 
 	putchar('\n');
