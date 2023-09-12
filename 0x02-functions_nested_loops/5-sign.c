@@ -11,15 +11,17 @@ int print_sign(int n)
 	char sign = +1;
 	if(n > 0)
 	{
+		_putchar('+');
 		sign = 1;
 	}
 	else if (n < 0)
 	{
+		_putchar('-');
 		sign = -1;
 	}
 	else
 	{
-		printf("%d", 0);
+		_putchar('0');
 		sign = 0;
 	}
 	return sign;
