@@ -8,18 +8,18 @@
  */
 int print_sign(int n)
 {
-	char sign = '+';
+	char sign = +1;
 	if(n > 0)
 	{
-		putchar(sign);
+		sign = 1;
 	}
 	else if (n < 0)
 	{
-		printf("-");
+		sign = -1;
 	}
 	else
 	{
-		printf("0");
+		sign = 0;
 	}
-	return 0;
+	return sign;
 }
