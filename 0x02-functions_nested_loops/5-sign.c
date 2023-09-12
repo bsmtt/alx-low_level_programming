@@ -22,5 +22,6 @@ int print_sign(int n)
 		printf("-");
 		return sign;
 	}
+	printf(0);
 	return sign;
 }
