@@ -13,16 +13,16 @@ int print_sign(int n)
 	if(n > 0)
 	{
 		sign = 1;
-		printf("+\n");
+		printf("+");
 	}
 	else if (n < 0)
 	{
 		sign = -1;
-		printf("-\n");
+		printf("-");
 	}
 	else
 	{
-		printf("0\n");
+		printf("0");
 	}
 
 	return sign;
