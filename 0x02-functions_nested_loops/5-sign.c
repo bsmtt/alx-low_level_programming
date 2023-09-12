@@ -8,20 +8,20 @@
  */
 int print_sign(int n)
 {
-	int sign = "00"
+	int sign = 0;
 
 	if(n > 0)
 	{
 		sign = 1;
-		printf("+");
+		printf("+1\n");
 		return sign;
 	}
 	else if (n < 0)
 	{
 		sign = 1;
-		printf("-");
+		printf("-1\n");
 		return sign;
 	}
-	printf("0");
+	printf("0\n");
 	return sign;
 }
