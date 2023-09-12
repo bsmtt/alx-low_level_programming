@@ -8,7 +8,7 @@
  */
 int print_sign(int n)
 {
-	int sign = 00;
+	int sign = "00"
 
 	if(n > 0)
 	{
@@ -22,6 +22,6 @@ int print_sign(int n)
 		printf("-");
 		return sign;
 	}
-	printf(0);
+	printf("0");
 	return sign;
 }
