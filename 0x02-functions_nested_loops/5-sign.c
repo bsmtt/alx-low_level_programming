@@ -2,7 +2,7 @@
 
 /**
  * print_sign - checks if a character is lowercase
- * @c: the character to check
+ * @n: the integer to check
  *
  * Return: 1 if the character is lowercase, 0 otherwise
  */
