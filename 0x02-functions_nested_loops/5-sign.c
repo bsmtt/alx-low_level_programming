@@ -8,10 +8,10 @@
  */
 int print_sign(int n)
 {
-	char sign = "+";
+	char sign = '+';
 	if(n > 0)
 	{
-		putchar("sign");
+		putchar(sign);
 		return 1;
 	}
 	else if (n < 0)
