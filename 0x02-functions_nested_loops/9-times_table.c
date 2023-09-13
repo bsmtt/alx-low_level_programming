@@ -18,7 +18,7 @@ void times_table(void)
 			if (m < 9)
 				printf(", %2d", p);
 			else
-				printf("%2d", p);
+				printf(", %2d", p);
 
 		}
 		printf("\n");
