@@ -2,7 +2,7 @@
 
 /**
  * print_to_98 - check the code
- *
+ * @n: start point
  * Return: Always void.
  */
 void print_to_98(int n)
