@@ -12,10 +12,11 @@ void more_numbers(void)
 	while (i < 10)
 	{
 		int n = 0;
+
 		while (n <= 14)
 		{
 			printf("%d", n);
-			n++;	       
+			n++;
 		}
 		putchar('\n');
 		i++;
