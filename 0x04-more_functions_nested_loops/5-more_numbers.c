@@ -15,11 +15,16 @@ void more_numbers(void)
 
 		while (n <= 14)
 		{
-			printf("%d", n);
+			if (n < 10)
+				_putchar(n + '0');
+			else
+				_putchar(n / 10 + '0');
+				_putchar(n % 10 + '0');
+
 			n++;
 		}
-		putchar('\n');
+		_putchar('\n');
 		i++;
 	}
-	putchar('\n');
+	_putchar('\n');
 }
