@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int i = 0;
+	int i = 1;
 
 	while (i <= 100)
 	{
@@ -15,17 +15,17 @@ int main(void)
 		{
 			putchar(' ');
 		}
-		if (i % 3 == 0)
+		if (i % 3 == 0 && i % 5 != 0)
 		{
-			putchar('Fizz');
+			printf("Fizz");
 		}
-		else if (i % 5 == 0)
+		else if (i % 5 == 0 && i % 3 != 0)
 		{
-			putchar('Buzz');
+			printf("Buzz");
 		}
 		else if (i % 5 == 0 && i % 3 == 0)
 		{
-			putchar('FizzBuzz');
+			printf("FizzBuzz");
 		}
 		else
 		{
