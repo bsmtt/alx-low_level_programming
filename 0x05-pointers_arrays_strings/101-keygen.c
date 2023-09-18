@@ -6,8 +6,10 @@
  * main - check the code
  * Return: Always void.
  */
-void main(void)
+int  main(void)
 {
 	char password = rand();
 	printf("%d", password);
+
+	return (0);
 }
