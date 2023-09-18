@@ -9,5 +9,5 @@
 void main(void)
 {
 	char password = rand();
-	printf("Tada! Congrats");
+	printf("%d", password);
 }
