@@ -22,7 +22,7 @@ void puts_half(char *str)
 	while (ls < l)
 	{
 		printf("%c", str[ls]);
-		i ++;
+		ls++;
 	}
 
 	printf("\n");
