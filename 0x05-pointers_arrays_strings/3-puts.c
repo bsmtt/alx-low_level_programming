@@ -2,7 +2,7 @@
 
 /**
  * _puts - check the code
- * @n: start point
+ * @str: start point
  * Return: Always void.
  */
 void _puts(char *str)
