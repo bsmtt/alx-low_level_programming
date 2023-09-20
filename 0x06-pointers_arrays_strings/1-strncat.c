@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * strncat - check the code
+ * _strncat - check the code
  * @dest: first variable
  * @src: second variable
  * @n : count
  * Return: Always void.
  */
-char *strncat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	char *ptr = dest;
 
