@@ -11,6 +11,10 @@ char *cap_string(char *str)
 
 	while (*ptr)
 	{
+		while (!(*ptr >= 'a' && *ptr <= 'z'))
+		{
+			ptr++;
+		}
 		char next_char = *(ptr + 1);
 
 		if (*ptr == '\n'
