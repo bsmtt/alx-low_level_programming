@@ -9,32 +9,29 @@ char *cap_string(char *str)
 {
 	char *ptr = str;
 
-	while (*ptr)
+	while (*ptr != '\0')
 	{
 		while (!(*ptr >= 'a' && *ptr <= 'z'))
 		{
 			ptr++;
 		}
-		char next_char = *(ptr + 1);
+		char next_char = *(ptr);
 
-		if (*ptr == '\n'
-		|| *ptr == '.'
-		|| *ptr == ','
-		|| *ptr == ';'
-		|| *ptr == '!'
-		|| *ptr == '?'
-		|| *ptr == '"'
-		|| *ptr == '('
-		|| *ptr == ')'
-		|| *ptr == '{'
-		|| *ptr == '}'
-		|| *ptr == ' '
-		|| *ptr == '\t')
+		if (*ptr - 1 == '\n'
+		|| *ptr - 1 == '.'
+		|| *ptr - 1 == ','
+		|| *ptr - 1 == ';'
+		|| *ptr - 1 == '!'
+		|| *ptr - 1 == '?'
+		|| *ptr - 1 == '"'
+		|| *ptr - 1 == '('
+		|| *ptr - 1 == ')'
+		|| *ptr - 1 == '{'
+		|| *ptr - 1 == '}'
+		|| *ptr - 1 == ' '
+		|| *ptr - 1 == '\t')
 		{
-			if (islower(next_char))
-			{
-				*(ptr + 1) = toupper(next_char);
-			}
+			*(ptr) = toupper(next_char);
 		}
 		ptr++;
 	}
