@@ -7,33 +7,32 @@
  */
 char *cap_string(char *str)
 {
-	char *ptr = str;
+	int i = 0;
 
-	while (*ptr != '\0')
+	while (str != '\0')
 	{
-		while (!(*ptr >= 'a' && *ptr <= 'z'))
+		while (!(str[i] >= 'a' && str[i] <= 'z'))
 		{
-			ptr++;
+			i++;
 		}
-		char next_char = *(ptr);
 
-		if (*ptr - 1 == '\n'
-		|| *ptr - 1 == '.'
-		|| *ptr - 1 == ','
-		|| *ptr - 1 == ';'
-		|| *ptr - 1 == '!'
-		|| *ptr - 1 == '?'
-		|| *ptr - 1 == '"'
-		|| *ptr - 1 == '('
-		|| *ptr - 1 == ')'
-		|| *ptr - 1 == '{'
-		|| *ptr - 1 == '}'
-		|| *ptr - 1 == ' '
-		|| *ptr - 1 == '\t')
+		if (str[i - 1] == '\n'
+		|| str[i - 1] == '.'
+		|| str[i - 1] == ','
+		|| str[i - 1] == ';'
+		|| str[i - 1] == '!'
+		|| str[i - 1] == '?'
+		|| str[i - 1] == '"'
+		|| str[i - 1] == '('
+		|| str[i - 1] == ')'
+		|| str[i - 1] == '{'
+		|| str[i - 1] == '}'
+		|| str[i - 1] == ' '
+		|| str[i - 1] == '\t')
 		{
-			*(ptr) = toupper(next_char);
+			str[i] -= 32;
 		}
-		ptr++;
+		i++;
 	}
 	return (str);
 }
