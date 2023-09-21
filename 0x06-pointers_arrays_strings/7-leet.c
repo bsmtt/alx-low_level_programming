@@ -8,12 +8,13 @@
 char *leet(char *str)
 {
 	char *ptr = str;
+	int i;
 	char *leet_chars = "aAeEoOtTlL";
 	char *leet_nums = "4433007711";
 
 	while (*ptr)
 	{
-		for (int i = 0; i < 10; i++)
+		for (i = 0; i < 10; i++)
 		{
 			if (*ptr == leet_chars[i])
 			{
