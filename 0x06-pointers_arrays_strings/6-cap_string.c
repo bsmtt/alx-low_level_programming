@@ -27,8 +27,10 @@ char *cap_string(char *str)
 		|| *ptr == ' '
 		|| *ptr == '\t')
 		{
-			if ((islower(next_char))
-				*(ptr + 1) = toupper(next_char);
+			if (islower(next_char))
+			{
+			  *(ptr + 1) = toupper(next_char);
+			}
 		}
 		else 
 		{
