@@ -11,6 +11,8 @@ char *cap_string(char *str)
 
 	while (*ptr != '\0')
 	{
+		char next_char = *(ptr + 1);
+
 		if (*ptr == '\n'
 		|| *ptr == '.'
 		|| *ptr == ','
@@ -25,9 +27,12 @@ char *cap_string(char *str)
 		|| *ptr == ' '
 		|| *ptr == '\t')
 		{
-			char next_char = *(ptr + 1);
-
-			*(ptr + 1) = toupper(next_char);
+			if ((islower(next_char))
+				*(ptr + 1) = toupper(next_char);
+		}
+		else 
+		{
+			*(ptr + 1) = tolower(next_char);
 		}
 		ptr++;
 	}
