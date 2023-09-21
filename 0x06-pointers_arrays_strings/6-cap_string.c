@@ -9,7 +9,7 @@ char *cap_string(char *str)
 {
 	char *ptr = str;
 
-	while (*ptr != '\0')
+	while (*ptr)
 	{
 		char next_char = *(ptr + 1);
 
@@ -27,12 +27,12 @@ char *cap_string(char *str)
 		|| *ptr == ' '
 		|| *ptr == '\t')
 		{
-			if (islower(next_char))
+			if (islower(next_char) == 1)
 			{
-			  *(ptr + 1) = toupper(next_char);
+				*(ptr + 1) = toupper(next_char);
 			}
 		}
-		else 
+		else
 		{
 			*(ptr + 1) = tolower(next_char);
 		}
