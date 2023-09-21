@@ -14,7 +14,10 @@ char *cap_string(char *str)
 		if (isspace(*ptr) || ispunct(*ptr))
 		{
 			char next_char = *(ptr + 1);
-			*(ptr + 1) = toupper(next_char);
+			if (islower(next_char))
+			{
+				*(ptr + 1) = toupper(next_char);
+			}
 		}
 		ptr++;
 	}
