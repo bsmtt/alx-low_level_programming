@@ -11,9 +11,7 @@ char *cap_string(char *str)
 
 	while (*ptr != '\0')
 	{
-		if (isspace(*ptr) 
-		|| ispunct(*ptr)
-		|| *ptr == '\n'
+		if (*ptr == '\n'
 		|| *ptr == '.'
 		|| *ptr == ','
 		|| *ptr == ';'
@@ -24,11 +22,12 @@ char *cap_string(char *str)
 		|| *ptr == ')'
 		|| *ptr == '{'
 		|| *ptr == '}'
+		|| *ptr == ' '
 		|| *ptr == '\t')
 		{
 			char next_char = *(ptr + 1);
 
-			*(ptr + 1) = toupper(next_char);
+			*(ptr + 1) = next_char - 32;
 		}
 		ptr++;
 	}
