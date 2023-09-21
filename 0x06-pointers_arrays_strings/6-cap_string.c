@@ -27,7 +27,7 @@ char *cap_string(char *str)
 		{
 			char next_char = *(ptr + 1);
 
-			*(ptr + 1) = next_char - 32;
+			*(ptr + 1) = toupper(next_char);
 		}
 		ptr++;
 	}
