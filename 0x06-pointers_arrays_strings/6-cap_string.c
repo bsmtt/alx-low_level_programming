@@ -32,10 +32,6 @@ char *cap_string(char *str)
 				*(ptr + 1) = toupper(next_char);
 			}
 		}
-		else
-		{
-			*(ptr + 1) = tolower(next_char);
-		}
 		ptr++;
 	}
 	return (str);
