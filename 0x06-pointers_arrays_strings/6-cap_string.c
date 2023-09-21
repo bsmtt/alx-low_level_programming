@@ -11,14 +11,23 @@ char *cap_string(char *str)
 
 	while (*ptr != '\0')
 	{
-		if (isspace(*ptr) || ispunct(*ptr))
+		if (isspace(*ptr) 
+		|| ispunct(*ptr)
+		|| *ptr == '\n'
+		|| *ptr == '.'
+		|| *ptr == ','
+		|| *ptr == ';'
+		|| *ptr == '!'
+		|| *ptr == '?'
+		|| *ptr == '"'
+		|| *ptr == '('
+		|| *ptr == ')'
+		|| *ptr == '{'
+		|| *ptr == '}'
+		|| *ptr == '\t')
 		{
 			char next_char = *(ptr + 1);
 
-			if (*ptr == '\t')
-			{
-				*ptr = ' ';
-			}
 			*(ptr + 1) = toupper(next_char);
 		}
 		ptr++;
