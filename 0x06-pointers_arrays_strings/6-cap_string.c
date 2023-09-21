@@ -15,7 +15,7 @@ char *cap_string(char *str)
 		{
 			char next_char = *(ptr + 1);
 
-			if(*ptr == '\t')
+			if (*ptr == '\t')
 			{
 				*ptr = ' ';
 			}
