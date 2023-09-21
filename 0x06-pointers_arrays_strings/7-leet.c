@@ -22,7 +22,7 @@ char *leet(char *str)
 				break;
 			}
 		}
-		*ptr++;
+		ptr++;
 	}
 	return (str);
 }
