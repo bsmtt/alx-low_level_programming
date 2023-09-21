@@ -2,7 +2,7 @@
 #include <ctype.h>
 
 /**
- * _strcmp - check the code
+ * string_toupper - check the code
  * @str: second variable
  * Return: Always void.
  */
@@ -18,5 +18,5 @@ char *string_toupper(char *str)
 		}
 		ptr++;
 	}
-	return str;
+	return (str);
 }
