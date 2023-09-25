@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strpbrk - cpy memory byte
+ * _strstr - cpy memory byte
  * @haystack:first variable
  * @needle: second variable
  * Return: s or NULL
