@@ -18,6 +18,7 @@ void print_chessboard(char (*a)[8])
 			printf("%c ", a[i][j]);
 			j++;
 		}
+		printf("\n");
 		i++;
 	}
 }
