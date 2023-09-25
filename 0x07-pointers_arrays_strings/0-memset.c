@@ -5,7 +5,7 @@
  * @s: second variable
  * @b: btyte
  * @n: count
- * Return: Always void.
+ * Return: s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
