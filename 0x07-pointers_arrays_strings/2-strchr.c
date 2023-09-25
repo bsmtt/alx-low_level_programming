@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * _memcpy - copy memory byte
- * @dest:first variable
- * @src: second variable
- * @n: count
- * Return: s
+ * _strchr - cpy memory byte
+ * @s:first variable
+ * @c: second variable
+ * Return: s or NULL
  */
 char *_strchr(char *s, char c)
 {
@@ -13,9 +12,9 @@ char *_strchr(char *s, char c)
 	{
 		if (c == *s)
 		{
-			return s;
+			return (s);
 		}
 		s++;
 	}
-	return NULL;
+	return (NULL);
 }
