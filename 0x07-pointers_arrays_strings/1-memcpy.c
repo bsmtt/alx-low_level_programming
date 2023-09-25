@@ -3,7 +3,7 @@
 /**
  * _memcpy - copy memory byte
  * @dest:first variable
- * @stc: second variable
+ * @src: second variable
  * @n: count
  * Return: s
  */
