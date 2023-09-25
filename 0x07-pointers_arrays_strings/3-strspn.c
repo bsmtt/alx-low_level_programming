@@ -9,11 +9,10 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int count = 0;
-	int found;
 
-	while (*s != '\0')
+	while (*s !='\0')
 	{
-		found = 0;
+		int found = 0;
 		int i;
 
 		for (i = 0; accept[i] != '\0'; i++)
