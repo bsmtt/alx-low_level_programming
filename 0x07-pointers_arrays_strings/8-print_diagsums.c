@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_chessboard - cpy memory byte
+ * print_diagsums - cpy memory byte
  * @a:first variable
  * @size: size
  * Return void
