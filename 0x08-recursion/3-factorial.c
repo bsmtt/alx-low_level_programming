@@ -6,7 +6,7 @@
  *
  * Return: int
  */
-int factorial(char n)
+int factorial(int n)
 {
 	if (n < 0)
 	{
