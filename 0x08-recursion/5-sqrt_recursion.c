@@ -17,15 +17,15 @@ int _sqrt_recursion(int n)
  */
 int _sqr(int n, int sq)
 {
-        if (sq * sq == n)
-        {
-                return (sq);
-        }
+	if (sq * sq == n)
+	{
+		return (sq);
+	}
 
-        if (sq * sq < n)
-        {
+	if (sq * sq < n)
+	{
 		return (_sqr(n, sq + 1));
-        }
+	}
 
-        return (-1);
+	return (-1);
 }
