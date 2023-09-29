@@ -10,7 +10,7 @@ int _sqrt_recursion(int n)
 	return (_sqr(n, 1));
 }
 /**
- * _sqrt - checks if a character is digit
+ * _sqr - checks if a character is digit
  * @n: the  value
  * @sq: square value
  * Return: int
