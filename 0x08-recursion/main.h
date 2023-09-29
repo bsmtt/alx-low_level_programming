@@ -10,5 +10,7 @@
 	int _sqr(int n, int sq);
 	int _sqrt_recursion(int n);
 	int is_prime_number(int n);
+	int check(int n, int d);
+	int is_prime_number(int n);
 
 #endif

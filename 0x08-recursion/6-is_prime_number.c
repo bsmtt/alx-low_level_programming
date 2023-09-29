@@ -7,18 +7,20 @@
  */
 int is_prime_number(int n)
 {
-	int i;
+	return (check(n, 2));
+}
 
-	if (n <= 1)
-	{
-		return (0);
-	}
-	for (i = 2; i * i <= n; i++)
-	{
-		if (n % i == 0)
-		{
-			return (0);
-		}
-	}
-	return (1);
+/**
+ * check - checks if a character is digit
+ * @n: the  value
+ * @d: d vaue
+ * Return: int
+ */
+int check(int n, int d)
+{
+	if (d >= n && n > 1)
+		return (1)
+	if (n % d == 0 || n <= 1)
+		return (0)
+	return (check(n, d + 1));
 }
