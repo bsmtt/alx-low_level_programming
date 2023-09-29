@@ -24,7 +24,7 @@ int _sqr(int n, int sq)
 
         if (sq * sq < n)
         {
-                return (_sqrt(n, sq + 1));
+		return (_sqr(n, sq + 1));
         }
 
         return (-1);
