@@ -15,13 +15,12 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	int i = 0;
+	int i = 1;
 	int sum = 0;
 	char *c;
 
 	while (i < argc)
 	{
-		int j;
 
 		for (c = argv[i]; *c!= '\0'; c++)
 		{
