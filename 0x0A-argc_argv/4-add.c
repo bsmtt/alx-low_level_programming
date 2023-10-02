@@ -17,14 +17,15 @@ int main(int argc, char *argv[])
 	}
 	int i = 0;
 	int sum = 0;
+	char *c;
 
 	while (i < argc)
 	{
 		int j;
 
-		for (j = 0; argv[i][j] != '\0'; j++)
+		for (c = argv[i]; *c!= '\0'; c++)
 		{
-			if (!isdigit(argv[i][j]))
+			if (!isdigit(*c))
 				printf("Error\n");
 				return (1);
 		}
