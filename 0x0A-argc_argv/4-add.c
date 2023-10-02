@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	int i = 1;
+	int i = 0;
 	int sum = 0;
 	char *c;
 
