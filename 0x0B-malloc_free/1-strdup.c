@@ -11,7 +11,7 @@ char *_strdup(char *str)
 	char *duplicate;
 
 	if (str == NULL)
-	{i
+	{
 		return (NULL);
 	}
 
