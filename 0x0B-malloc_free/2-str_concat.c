@@ -3,7 +3,8 @@
 
 /**
  * str_concat - checks if a character is lowercase
- * @str: the string
+ * @s1: the string
+ * @s2 : concat
  * Return: char
  */
 char *str_concat(char *s1, char *s2)
@@ -12,12 +13,12 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		return ("");
+		s1 = " ";
 	}
-	
+
 	if (s2 == NULL)
 	{
-		return ("");
+		s2 = " ";
 	}
 
 	concatenated = (char *)malloc((strlen(s1) + strlen(s2) + 1) * sizeof(char));
