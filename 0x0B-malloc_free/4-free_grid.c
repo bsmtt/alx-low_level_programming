@@ -4,7 +4,7 @@
 /**
  * free_grid - checks if a character is lowercase
  * @grid: the string
- * height: heght
+ * @height: heght
  * Return: char
  */
 void free_grid(int **grid, int height)
