@@ -13,15 +13,16 @@ char *argstostr(int ac, char **av)
 	int index = 0;
 	char *result;
 	int i;
+	int j;
 
 	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
 	
-	for (int i = 0; i < ac; i++)
+	for (j = 0; i < ac; j++)
 	{
-		total_length += strlen(av[i]) + 1;
+		total_length += strlen(av[j]) + 1;
 	}
 
 	result = (char *)malloc(total_length * sizeof(char));
