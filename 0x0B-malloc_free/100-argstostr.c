@@ -20,7 +20,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 	
-	for (j = 0; i < ac; j++)
+	for (j = 0; j < ac; j++)
 	{
 		total_length += strlen(av[j]) + 1;
 	}
