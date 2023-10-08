@@ -3,7 +3,7 @@
 
 /**
  * _calloc - checks if a character is lowercase
- * @sie: the string
+ * @size: the string
  * @nmemb : concat
  * Return: char
  */
@@ -13,7 +13,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (nmemb == 0 || size == 0)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 
