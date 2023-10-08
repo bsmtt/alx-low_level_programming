@@ -7,7 +7,7 @@
  * @nmemb : concat
  * Return: char
  */
-char *_calloc(unsigned int nmemb, unsigned int size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *ptr;
 
