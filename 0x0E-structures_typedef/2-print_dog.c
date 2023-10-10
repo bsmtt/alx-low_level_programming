@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * init_dog - check the code
+ * print_dog - check the code
  * @d : d
  * Return: Always void.
  */
