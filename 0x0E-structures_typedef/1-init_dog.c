@@ -2,7 +2,10 @@
 
 /**
  * init_dog - check the code
- *
+ * @name: name
+ * @age: age
+ * @owner: owner
+ * @d : d
  * Return: Always void.
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
