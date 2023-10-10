@@ -2,7 +2,8 @@
 
 /**
  * main - print
- * Return : int
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
