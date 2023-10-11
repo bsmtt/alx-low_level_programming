@@ -3,7 +3,7 @@
 /**
  * array_iterator - prints an integer
  * @array: the integer to print
- * @sie: size
+ * @size: size
  * @action: action
  *
  * Return: void.
