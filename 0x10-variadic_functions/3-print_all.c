@@ -14,7 +14,6 @@ void print_str(va_list args)
 	if (str != NULL)
 	{
 		printf("%s", str);
-		break;
 	}
 	printf("(nil)");
 }
