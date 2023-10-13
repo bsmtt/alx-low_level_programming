@@ -17,7 +17,7 @@ void print_format(const char type, va_list args)
 
 	switch (type)
 	{
-		case 'c';
+		case 'c':
 			ch = va_arg(args, int);
 			printf("%c", ch);
 			break;
@@ -39,8 +39,7 @@ void print_format(const char type, va_list args)
 			printf("(nil)");
 			break;
 		default:
-			i++;
-			continue;
+			break;
 	}
 }
 
