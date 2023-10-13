@@ -2,6 +2,11 @@
 #define VARIADIC_FUNCTIONS_H
 #include <stdarg.h>
 
+/**
+ * struct type - struct type
+ * @type: types
+ * @fun: function
+ */
 typedef struct type
 {
 	char *type;

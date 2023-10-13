@@ -11,14 +11,11 @@ void print_str(va_list args)
 	char *str;
 
 	str = va_arg(args, char *);
-	if (str != NULL)
-	{
-		printf("%s", str);
-	}
-	else
-	{
-		printf("(nil)");
-	}
+	switch ((int) (!str))
+		case 1:
+		str = "(nil)";
+
+	printf("%s", str);
 }
 
 /**
