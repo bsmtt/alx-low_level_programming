@@ -1,6 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
-
+#include "variadic_functions.h"
 /**
  * print_str - check the code
  * @args: args
