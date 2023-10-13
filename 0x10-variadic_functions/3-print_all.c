@@ -71,7 +71,8 @@ void print_all(const char * const format, ...)
 		{"c", print_char},
 		{"i", print_num},
 		{"f", print_float},
-		{"s", print_str}
+		{"s", print_str},
+		{NULL, NULL}
 	};
 
 	va_start(args, format);
@@ -83,7 +84,7 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == types[j].type[0])
 			{
-				types[j].fun(arg);
+				types[j].fun(args);
 			}
 			j++;
 		}

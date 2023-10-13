@@ -5,7 +5,7 @@
 typedef struct type
 {
 	char *type;
-	void (*fun)(char *, va_list);
+	void (*fun)(va_list);
 } type_t;
 
 int sum_them_all(const unsigned int n, ...);
