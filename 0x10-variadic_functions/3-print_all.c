@@ -3,11 +3,10 @@
 
 /**
  * print_str - check the code
- * @type: type
  * @args: args
  * Return: Always void.
  */
-void print_str(const char type, va_list args)
+void print_str(va_list args)
 {
 	char *str;
 
@@ -22,11 +21,10 @@ void print_str(const char type, va_list args)
 
 /**
  * print_num - check the code
- * @type: type
  * @args: args
  * Return: Always void.
  */
-void print_num(const  char type, va_list args)
+void print_num(va_list args)
 {
 	int num;
 
@@ -36,11 +34,10 @@ void print_num(const  char type, va_list args)
 
 /**
  * print_char - check the code
- * @type: type
  * @args: args
  * Return: Always void.
  */
-void print_char(const  char type, va_list args)
+void print_char(va_list args)
 {
 	char ch;
 
@@ -51,11 +48,10 @@ void print_char(const  char type, va_list args)
 
 /**
  * print_float - check the code
- * @type: type
  * @args: args
  * Return: Always void.
  */
-void print_float(const  char type, va_list args)
+void print_float(va_list args)
 {
 	float f;
 
@@ -79,16 +75,16 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 			case 'c':
-				print_char(format[i], args);
+				print_char(args);
 				break;
 			case 'i':
-				print_num(format[i], args);
+				print_num(args);
 				break;
 			case 'f':
-				 print_float(format[i], args);
+				 print_float(args);
 				break;
 			case 's':
-				 print_str(format[i], args);
+				 print_str(args);
 				break;
 			default:
 				i++;
