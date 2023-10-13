@@ -2,45 +2,65 @@
 #include <stdio.h>
 
 /**
- * print_format - check the code
+ * print_str - check the code
  * @type: type
  * @args: args
  * Return: Always void.
  */
-
-void print_format(const char type, va_list args)
+void print_str(const char type, va_list args)
 {
 	char *str;
+
+	str = va_arg(args, char *);
+	if (str != NULL)
+	{
+		printf("%s", str);
+		break;
+	}
+	printf("(nil)");
+}
+
+/**
+ * print_num - check the code
+ * @type: type
+ * @args: args
+ * Return: Always void.
+ */
+void print_num(const  char type, va_list args)
+{
 	int num;
+
+	num = va_arg(args, int);
+	printf("%d", num);
+}
+
+/**
+ * print_char - check the code
+ * @type: type
+ * @args: args
+ * Return: Always void.
+ */
+void print_char(const  char type, va_list args)
+{
 	char ch;
+
+	ch = va_arg(args, int);
+	printf("%c", ch);
+
+}
+
+/**
+ * print_float - check the code
+ * @type: type
+ * @args: args
+ * Return: Always void.
+ */
+void print_float(const  char type, va_list args)
+{
 	float f;
 
-	switch (type)
-	{
-		case 'c':
-			ch = va_arg(args, int);
-			printf("%c", ch);
-			break;
-		case 'i':
-			num = va_arg(args, int);
-			printf("%d", num);
-				break;
-		case 'f':
-			f = va_arg(args, double);
-			printf("%f", f);
-			break;
-		case 's':
-			str = va_arg(args, char *);
-			if (str != NULL)
-			{
-				printf("%s", str);
-				break;
-			}
-			printf("(nil)");
-			break;
-		default:
-			break;
-	}
+	f = va_arg(args, double);
+	printf("%f", f);
 }
 
 /**
@@ -54,13 +74,30 @@ void print_all(const char * const format, ...)
 	unsigned int i = 0;
 
 	va_start(args, format);
-
 	while (format && format[i])
 	{
-		 print_format(format[i], args);
-
+		switch (format[i])
+		{
+			case 'c':
+				print_char(format[i], args);
+				break;
+			case 'i':
+				print_num(format[i], args);
+				break;
+			case 'f':
+				 print_float(format[i], args);
+				break;
+			case 's':
+				 print_str(format[i], args);
+				break;
+			default:
+				i++;
+				continue;
+		}
 		if (format[i + 1] != '\0')
+		{
 			printf(", ");
+		}
 		i++;
 	}
 	va_end(args);
