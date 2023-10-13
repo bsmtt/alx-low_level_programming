@@ -78,19 +78,19 @@ void print_all(const char * const format, ...)
 	va_start(args, format);
 	while (format && format[i])
 	{
-		int j;
+		int j = 0;
 
 		while (types[j].type)
 		{
 			if (format[i] == types[j].type[0])
 			{
 				types[j].fun(args);
+				if (format[i + 1] != '\0')
+				{
+					printf(", ");
+				}
 			}
 			j++;
-		}
-		if (format[i + 1] != '\0')
-		{
-			printf(", ");
 		}
 		i++;
 	}
