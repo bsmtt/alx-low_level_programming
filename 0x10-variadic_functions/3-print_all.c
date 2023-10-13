@@ -67,27 +67,25 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 	unsigned int i = 0;
+	type_t types[] = {
+		{"c", print_char},
+		{"i", print_num},
+		{"f", print_float},
+		{"s", print_str}
+	};
 
 	va_start(args, format);
 	while (format && format[i])
 	{
-		switch (format[i])
+		int j;
+
+		while (types[j].type)
 		{
-			case 'c':
-				print_char(args);
-				break;
-			case 'i':
-				print_num(args);
-				break;
-			case 'f':
-				 print_float(args);
-				break;
-			case 's':
-				 print_str(args);
-				break;
-			default:
-				i++;
-				continue;
+			if (format[i] == types[j].type[0])
+			{
+				types[j].fun(arg);
+			}
+			j++;
 		}
 		if (format[i + 1] != '\0')
 		{
