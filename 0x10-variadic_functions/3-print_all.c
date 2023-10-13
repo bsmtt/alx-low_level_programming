@@ -15,7 +15,10 @@ void print_str(va_list args)
 	{
 		printf("%s", str);
 	}
-	printf("(nil)");
+	else
+	{
+		printf("(nil)");
+	}
 }
 
 /**
