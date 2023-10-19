@@ -15,11 +15,14 @@ size_t print_list(const list_t *h)
 		if (h->str != NULL)
 		{
 			unsigned int len = 0;
+			unsigned int i;
+
 			while (h->str[len] != '\0')
 				len++;
-			for (unsigned int i = 0; i < len; i++)
+
+			for (i = 0; i < len; i++)
 				_putchar(h->str[i]);
-			_putchar('\n')
+			_putchar('\n');
 		}
 		else
 		{
@@ -38,5 +41,5 @@ size_t print_list(const list_t *h)
 		h = h->next;
 	}
 
-	return count;
+	return (count);
 }
