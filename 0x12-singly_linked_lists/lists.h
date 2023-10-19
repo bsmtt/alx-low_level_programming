@@ -10,10 +10,11 @@
  *
  * Description : singly linked list
  */
-typedef struct list {
-    char *str;
-    unsigned int len;
-    struct list *next;
+typedef struct list
+{
+	char *str;
+	unsigned int len;
+	struct list *next;
 } list_t;
 
 int _putchar(char c);
