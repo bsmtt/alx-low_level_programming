@@ -15,27 +15,14 @@ size_t print_list(const list_t *h)
 		if (h->str != NULL)
 		{
 			unsigned int len = 0;
-			unsigned int i;
 
 			while (h->str[len] != '\0')
 				len++;
-
-			for (i = 0; i < len; i++)
-				_putchar(h->str[i]);
-			_putchar('\n');
+			printf("[%u] %s\n", len, h->str);
 		}
 		else
 		{
-			_putchar('[');
-			_putchar('0');
-			_putchar(']');
-			_putchar(' ');
-			_putchar('(');
-			_putchar('n');
-			_putchar('i');
-			_putchar('l');
-			_putchar(')');
-			_putchar('\n');
+			printf("[0] (nil)\n");
 		}
 		count++;
 		h = h->next;
