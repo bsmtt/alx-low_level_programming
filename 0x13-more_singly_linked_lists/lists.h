@@ -12,4 +12,6 @@ typedef struct listint_t
 	struct listint_t *next;
 } listint_t;
 
+size_t listint_len(const listint_t *h);
+
 #endif
