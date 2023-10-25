@@ -25,5 +25,6 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
 int delete_nodeint_at_index(listint_t **head, unsigned int index);
 listint_t *reverse_listint_helper(listint_t *prev, listint_t *current);
 listint_t *reverse_listint(listint_t **head);
+size_t free_listint_safe(listint_t **h);
 
 #endif
