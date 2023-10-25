@@ -12,15 +12,15 @@ listint_t *reverse_listint(listint_t **head)
 	listint_t *new_head;
 
 	if (*head == NULL || (*head)->next == NULL)
-		return *head;
+		return (*head);
 
 	new_head = reverse_listint_helper(*head, (*head)->next);
 	(*head)->next = NULL;
-	return new_head;
+	return (new_head);
 }
 
 /**
- * reverse_listint_helper - Recursive helper function to reverse a listint_t linked list.
+ * reverse_listint_helper - Recursive helper.
  * @prev: Pointer to the previous node.
  * @current: Pointer to the current node.
  *
@@ -33,12 +33,12 @@ listint_t *reverse_listint_helper(listint_t *prev, listint_t *current)
 	if (current->next == NULL)
 	{
 		current->next = prev;
-		return current;
+		return (current);
 	}
 
 	next = current->next;
 
 	current->next = prev;
 
-	return reverse_listint_helper(current, next);
+	return (reverse_listint_helper(current, next));
 }
