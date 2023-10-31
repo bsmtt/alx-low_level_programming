@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, NORD, file_from), exit(98);
 	fd_to = open(
 			file_to,
-			PER | S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH
+			 PER, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH
 			);
 	if (fd_to == -1)
 		dprintf(STDERR_FILENO, NOWR, file_to), exit(99);
