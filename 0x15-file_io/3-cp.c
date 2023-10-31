@@ -48,10 +48,10 @@ int main(int argc, char *argv[])
 	}
 	if (bytes_read == -1)
 		dprintf(STDERR_FILENO, NORD, file_from), exit(98);
-	if (close(fd_from) == -1)
+	if (close(fd_from))
 		dprintf(STDERR_FILENO, NOCLOSE, fd_from), exit(100);
-	if (close(fd_to) == -1)
+	if (close(fd_to))
 		dprintf(STDERR_FILENO, NOCLOSE, fd_to), exit(100);
 
-	return(EXIT_SUCCESS);
+	return (EXIT_SUCCESS);
 }
