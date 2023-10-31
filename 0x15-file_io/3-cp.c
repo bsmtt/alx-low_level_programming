@@ -52,5 +52,6 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, NOCLOSE, fd_from), exit(100);
 	if (close(fd_to) == -1)
 		dprintf(STDERR_FILENO, NOCLOSE, fd_to), exit(100);
-	return (0);
+
+	exit(EXIT_SUCCESS);
 }
