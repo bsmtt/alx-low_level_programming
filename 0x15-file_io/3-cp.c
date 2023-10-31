@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 	{
 		bytes_written = write(fd_to, buffer, bytes_read);
 		if (bytes_written == -1)
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to), exit(99);
+			dprintf(STDERR_FILENO, NOWR, file_to), exit(99);
 	}
 	if (bytes_read == -1)
 		dprintf(STDERR_FILENO, NORD, file_from), exit(98);
