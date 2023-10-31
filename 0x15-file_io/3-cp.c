@@ -13,6 +13,13 @@
 #define NOCLOSE "Error: Can't close fd %d\n"
 #define PER (O_WRONLY | O_CREAT | O_TRUNC)
 
+/**
+ * main - check the code
+ * @argc: argc
+ * @argv: argv
+ *
+ * Return: Always 0.
+ */
 int main(int argc, char *argv[])
 {
 	const char *file_from, *file_to;
