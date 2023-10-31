@@ -53,5 +53,5 @@ int main(int argc, char *argv[])
 	if (close(fd_to) == -1)
 		dprintf(STDERR_FILENO, NOCLOSE, fd_to), exit(100);
 
-	exit(EXIT_SUCCESS);
+	return(EXIT_SUCCESS);
 }
