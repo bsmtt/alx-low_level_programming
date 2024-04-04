@@ -3,5 +3,7 @@ SRC := *.c
 OBJ := $(SRC:%.c=%.o)
 NAME = school
 
+%.o: %.c m.h
+	$(CC) -c -o $@ $<
 all:
 	$(CC) $(OBJ) -o $(NAME)
